@@ -3,24 +3,25 @@
 	<head>
 		<meta charset = 'UTF-8'>
 		<title>CS290 Assignment3 Part 2 by Jooyoung Jung</title>
-		<script src = "src.js"></script>
+		<script src = 'src.js'></script>
 	</head>
 	<body>
 		<form>
 			<p>How many pages of results would you like to display(1-5)?</p>
-			<input type = 'radio' name = 'pageNumber' value = '1' checked>1
-			<input type = 'radio' name = 'pageNumber' value = '2'>2
-			<input type = 'radio' name = 'pageNumber' value = '3'>3
-			<input type = 'radio' name = 'pageNumber' value = '4'>4
-			<input type = 'radio' name = 'pageNumber' value = '5'>5
+			<input id = 'pageDisp' type = 'number' name = 'pageDisp' min = "1" max = "5">
 			<p>Which language would you like to display?</p>
-			<input id= 'Python' type = "checkbox" name = 'LangType' value = 'Python'>Python
-			<input id= 'JSON' type = "checkbox" name = 'LangType' value = 'JSON'>JSON
-			<input id= 'JavaScript' type = "checkbox" name = 'LangType' value = 'JavaScript'>JavaScript
-			<input id= 'SQL' type = "checkbox" name = 'LangType' value = 'SQL'>SQL
+			<input id = 'Python' type = 'checkbox' name = 'LangType' value = 'Python'>Python
+			<input id = 'JSON' type = 'checkbox' name = 'LangType' value = 'JSON'>JSON
+			<input id = 'JavaScript' type = 'checkbox' name = 'LangType' value = 'JavaScript'>JavaScript
+			<input id = 'SQL' type = 'checkbox' name = 'LangType' value = 'SQL'>SQL
 			</br>
 			<br>
-			<input type="button" name="Search" onclick = 'SetLang()' value="Search">
+			<input type = 'button' name = 'Save Settings' onclick = 'SaveSetting()' value = 'SaveSetting'>
+			<input type = 'button' name = 'Search Gist' onclick = "SearchGist('https://api.github.com/gists/public')" value = 'Search'>
+
 		</form>
-		<div id = "result" >Results</div>
-		<div id = "favorites" >Favorite</div>
+		<div id = "results"></div>
+		<div id = "favorites">Favorites</div>
+		<body onload="fave()"></body>	
+	</body>
+</html>	
