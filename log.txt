@@ -4,8 +4,8 @@ Tasks: Started and finished the three src files for assignment3 part 1.
 
 Start: 4/27/15 1:50am EST
 End: 4/27/15 5:00am EST
-Tasks: Started assignment 4. Finished making the html portion of my program and started on the .js. 
+Tasks: Started assignment 3 part 2. Finished making the html portion of my program and started on the .js. 
 
 Start: 4/27/15 10:00am EST
 End: 4/27/15 7:19pm EST
-Tasks: Finished the .js portion of assignemnt 4. 
+Tasks: Finished the .js portion of assignemnt3 part 2. 
